@@ -54,7 +54,7 @@ class GdgListViewModel: ViewModel() {
                         _regionList.value = it
                     }
                 }
-            } catch (e: IOException) {
+            } catch (e: Exception) {
                 _gdgList.value = listOf()
             }
         }
